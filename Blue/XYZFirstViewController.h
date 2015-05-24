@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYZFirstViewController : UIViewController
+@interface XYZFirstViewController : UIViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *txtMessage;
+@property (weak, nonatomic) IBOutlet UITextView *tvChat;
+
+
+- (IBAction)sendMessage:(id)sender;
+- (IBAction)cancelMessage:(id)sender;
+
+
 
 @end
